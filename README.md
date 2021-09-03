@@ -1,2 +1,3 @@
-# ResponsiveWebDesign-LastChallenge
+# Responsive Web Design- Last Challenge
+
  Last challenge from the free course Responsive Web Design Mae Easy by Kevin Powell.
