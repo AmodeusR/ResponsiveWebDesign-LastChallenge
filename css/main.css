@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #6F737F;
+  --secondary-color: #3B4050;
+  
+  --accent-color: #A59678;
+  --dark-color: #2E323F;
+  --light-color: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General */
+
+ body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(80%, 1200px);
+}
+
+img {
+  max-width: 100%;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+ .header {
+   background: var(--dark-color);
+}
+
+.first-section__title {
+  margin: 0;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.first-section {
+  color: white;
+  background: var(--secondary-color);
+}
+.header__nav {
+  display: flex;
+  justify-content: center; 
+  padding: 1rem 0;
+  
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* height: 5rem; */
+}
+
+.header__list {
+  display: none;
+}
