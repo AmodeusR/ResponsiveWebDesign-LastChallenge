@@ -6,10 +6,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Web Design</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  
+    <header class="header">
+      <!-- <div class="container"> -->
+        <nav class="header__nav container">
+          <img class="header__logo" src="./img/logo.svg" alt="Site logo">
+          <ul class="header__list list">
+            <li class="header__list-item list-item">Home</li>
+            <li class="header__list-item list-item">About</li>
+            <li class="header__list-item list-item">Contact</li>
+            <li class="header__list-item list-item">Sign in</li>
+            <li class="header__list-item list-item">Sign up</li>
+          </ul>
+        </nav>
+      <!-- </div> -->
+    </header>
+      <section class="first-section">
+        <h1 class="first-section__title">Responsive Layouts <span class="accent-color">don't have to be a struggle</span>
+        <div class="first-section__cta">
+          <p class="first-section__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, blanditiis!</p>
+          <button class="first-section__button">I want to learn</button>
+        </div>
+      </section>
+
+    <section class="second-section">
+      <div class="second-section__card">
+        <h2 class="second-section__title">Mobile-first</h2>
+        <p class="second-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum voluptatem necessitatibus minima nesciunt quasi maiores sunt a exercitationem dolore?</p>
+      </div>
+      <div class="second-section__card">
+        <h2 class="second-section__title">Efficient</h2>
+        <p class="second-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime similique minus at aspernatur ab dolores, consectetur veritatis expedita amet laboriosam.</p>
+      </div>
+      <div class="second-section__card">
+        <h2 class="second-section__title">Done Right</h2>
+        <p class="second-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corporis laboriosam officia nam sequi optio fuga commodi accusamus odio error.</p>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="main__section">
+        <h2>It doesn't have to be so hard</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam voluptates debitis, atque reprehenderit voluptate tempora distinctio expedita, sunt eaque possimus nostrum? Quam, deleniti dolore voluptates delectus natus at minus.</p>
+        <img src="./img/page-image.jpg" alt="Image of page layouts drawn in a sheet">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nesciunt debitis voluptatum accusamus nam beatae ab doloremque. Eum autem saepe, doloremque est consequuntur ipsum omnis aliquid blanditiis. Cupiditate, repudiandae minus?</p>
+      </section>
+      <aside class="main__aside">
+        <div class="main__card">
+          <h3>Break it down</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem alias deleniti veniam eligendi quae accusamus iusto amet molestias?</p>
+        </div>
+        <div class="main__card">
+          <h3>Work your way up</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus asperiores veniam earum placeat possimus maiores corporis? Quisquam.</p>
+        </div>
+        <div class="main__card">
+          <h3>Do it the right way</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non voluptatem doloribus velit unde repellendus ea voluptas laboriosam!</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <h4 class="footer__title">just scratching the surface</h4>
+      <div class="footer__columns">
+        <div class="footer__info">
+          <h5>About our company</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa aliquid mollitia, sapiente debitis nisi fugiat voluptas reiciendis ducimus voluptatum, voluptatem ipsum beatae animi quibusdam et.</p>
+        </div>
+        <div class="footer__info">
+          <h5 class="info__title">Getting around</h5>
+          <ul class="info__list list">
+            <li class="info__list-item list-item">Home</li>
+            <li class="info__list-item list-item">About</li>
+            <li class="info__list-item list-item">Contact</li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <h5 class="info__title">Other things</h5>
+          <ul class="info__list list">
+            <li class="info__list-item list-item">Lorem ipsum</li>
+            <li class="info__list-item list-item">Dolor</li>
+            <li class="info__list-item list-item">Sit amet</li>
+            <li class="info__list-item list-item">Consectectur</li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <h5 class="info__title">And more</h5>
+          <ul class="info__list list">
+            <li class="info__list-item list-item">Lorem ipsum</li>
+            <li class="info__list-item list-item">Dolor</li>
+            <li class="info__list-item list-item">Sit amet</li>
+            <li class="info__list-item list-item">Consectetur</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
