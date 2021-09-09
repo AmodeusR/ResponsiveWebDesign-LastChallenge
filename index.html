@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Web Design</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +13,31 @@
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="menu.js" defer></script>
 </head>
 <body>
-    <header class="header">
+  <header class="header">
+    <div class="hamburger">
+      <div class="hamburger-btn"></div>
+    </div>
         <nav class="header__nav container">
           <img class="header__logo" src="./img/logo.svg" alt="Site logo">
           <ul class="header__list list">
-            <li class="header__list-item list-item">Home</li>
-            <li class="header__list-item list-item">About</li>
-            <li class="header__list-item list-item">Contact</li>
-            <li class="header__list-item list-item">Sign in</li>
-            <li class="header__list-item list-item">Sign up</li>
+            <li class="header__list-item list-item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__list-item list-item">
+              <a href="#" class="header__link">About</a>
+            </li>
+            <li class="header__list-item list-item">
+              <a href="#" class="header__link">Contact</a>
+            </li>
+            <li class="header__list-item list-item">
+              <a href="#" class="header__link">Sign in</a>
+            </li>
+            <li class="header__list-item list-item">
+              <a href="#" class="header__link">Sign up</a>
+            </li>
           </ul>
         </nav>
     </header>
