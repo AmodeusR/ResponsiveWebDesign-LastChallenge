@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #6F737F;
-  --secondary-color: #3B4050;
+  --primary-color: #3B4050;
   
   --accent-color: #A59678;
   --accent-color-drk: #8d7d5e;
   --accent-color-brgt: #f5f3f3;
   --dark-color: #2E323F;
   --light-color: #FFFFFF;
-
+  --footer-text-color: hsl(225, 7%, 77%);
+  
   --ff-main: "Montserrat";
   --ff-accent: "Oswald";
 }
@@ -33,6 +33,8 @@
 .flex {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 img {
@@ -72,6 +74,18 @@ img {
   text-transform: uppercase;
 }
 
+.header__list {
+  display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  
+  background: var(--dark-color);
+  padding: 2rem;
+  transition: all .5s ease-out;
+}
 
 .header__list-item {
   transition: all 300ms ease;
@@ -83,7 +97,7 @@ img {
 
 .header__list-item:last-of-type {
   background: var(--accent-color);
-  padding: 1em 2em;
+  padding: .7em 1.5em;
   border-radius: 50px;
   color: white;
 }
@@ -158,19 +172,6 @@ img {
   transform: rotate(-45deg) translate(14px, 14px);
 }
 
-.header__list {
-  display: none;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  
-  background: var(--dark-color);
-  padding: 2rem;
-  transition: all .5s ease-out;
-}
-
 .show-nav {
   display: inherit;
 }
@@ -180,7 +181,7 @@ img {
 
 .hero {
   color: white;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   text-align: center;
   padding: 2rem 0;
 }
@@ -231,8 +232,6 @@ img {
   background: var(--accent-color-brgt);
 
   text-align: center;
-  
-  gap: 4rem;
 }
 
 .alt-section__title {
@@ -251,6 +250,11 @@ img {
 
 .main {
   padding: 2rem 0;
+}
+
+.main__section {
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 
@@ -285,11 +289,12 @@ img {
 .main__aside {
   text-align: center;
   padding: 2rem 0;
-  gap: 2rem;
 }
 
+
+
 .aside__card {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: white;
   padding: 1.5rem;
 
@@ -305,7 +310,7 @@ img {
 /* Footer */
 
 .footer {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: white;
   padding: 2rem 0;
   text-align: center;
@@ -324,13 +329,17 @@ img {
   font-size: 1.3rem;
 }
 
+.info__text {
+  color: var(--footer-text-color);
+}
+
 .info__list {
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .footer__link {
-  color: white;
+  color: var(--footer-text-color);
   text-decoration: none;
   transition: color ease 300ms;
 }
@@ -338,4 +347,122 @@ img {
 .footer__link:hover {
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (min-width: 57.5em) {
+
+  /* general */
+  .container {
+    width: min(90%, 75rem);
+  }
+
+  .info__text {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
+
+
+  /* header */
+
+  .hamburger {
+    display: none;
+  }
+
+  .header__nav {
+    justify-content: space-between;
+  }
+  
+  .header__list {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding: 0;
+    width: auto;
+  }
+
+  /* Hero */
+
+  .hero__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    max-width: 40rem;
+  }
+
+  .hero__text {
+    margin-bottom: 2rem;
+  }
+
+  /* Alt Section */
+
+  .alt-section__card {
+    max-width: 18rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main__section {
+    margin: 0;
+  }
+  
+  .main__aside {
+    align-items: center;
+    flex-direction: column;
+
+    /* max-width: max-content; */
+  }
+
+  .aside__card {
+    max-width: 20rem;
+  }
+
+  .footer {
+    padding: 4rem 0;
+  }
+
+  .footer__title {
+    margin-top: 0;
+    font-size: 4rem;
+  }
+  
+  .footer__columns {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info__title {
+    text-align: left;
+  }
+  
+  .info__text {
+    text-align: left;
+  }
+  
+  .info__list {
+    flex-direction: column;
+    align-items: flex-start;
+    color: red;
+  }
+
+  
+
+
 }
