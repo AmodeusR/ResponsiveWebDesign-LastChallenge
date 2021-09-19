@@ -1,8 +1,8 @@
-# Responsive Web Design - Last Challenge
-
- Last challenge from Kevin Powell's free course *Conquering Responsive Layouts*.
-
 <!-- markdownlint-disable MD033 -->
+<h1 align="center">Responsive Web Design - Last Challenge</h1>
+
+<p align="center">Last challenge from Kevin Powell's free course <em>Conquering Responsive Layouts</em></p>
+
 <h3 align="center">Languages</h3>
 <p align="center">
   <a href="#">English</a> • <a href="./lang/README.pt-br.md">Português</a>

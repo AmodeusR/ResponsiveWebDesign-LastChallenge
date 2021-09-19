@@ -1,14 +1,12 @@
-# Responsive Web Design - Último Desafio
-
-Último desafio do curso gratuito de Kevin Powell *Conquering Responsive Layouts*
-
 <!-- markdownlint-disable MD033 -->
+<h1 align="center">Responsive Web Design - Último Desafio</h1>
+
+<p align="center">Último desafio do curso gratuito de Kevin Powell <em>Conquering Responsive Layouts</em></p>
+
 <h3 align="center">Idiomas</h3>
 <p align="center">
   <a href="../README.md">English</a> • <a href="#">Português</a>
 </p>
-
-<h2 align="center">Página em construção</h2>
 <!-- markdownlin-enable MD033 -->
 
 ## Índice
