@@ -1,4 +1,3 @@
-<!-- markdownlint-disable MD033 -->
 <h1 align="center">Responsive Web Design - Last Challenge</h1>
 
 <p align="center">Last challenge from Kevin Powell's free course <em>Conquering Responsive Layouts</em></p>
@@ -7,7 +6,6 @@
 <p align="center">
   <a href="#">English</a> • <a href="./lang/README.pt-br.md">Português</a>
 </p>
-<!-- markdownlin-enable MD033 -->
 
 ## Table of contents
 
